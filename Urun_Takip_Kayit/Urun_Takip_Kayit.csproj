@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,11 +47,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GrafiklerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GrafiklerForm.Designer.cs">
+      <DependentUpon>GrafiklerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IstatistikForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IstatistikForm.Designer.cs">
+      <DependentUpon>IstatistikForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -60,8 +79,23 @@
     <Compile Include="UrunForm.Designer.cs">
       <DependentUpon>UrunForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="YonlendirmeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YonlendirmeForm.Designer.cs">
+      <DependentUpon>YonlendirmeForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GrafiklerForm.resx">
+      <DependentUpon>GrafiklerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IstatistikForm.resx">
+      <DependentUpon>IstatistikForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -74,6 +108,9 @@
     </Compile>
     <EmbeddedResource Include="UrunForm.resx">
       <DependentUpon>UrunForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YonlendirmeForm.resx">
+      <DependentUpon>YonlendirmeForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

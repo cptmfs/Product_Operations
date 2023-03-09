@@ -13,7 +13,7 @@ namespace Urun_Takip_Kayit
 {
     public partial class UrunForm : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-D3HGLAO\SQLEXPRESS;Initial Catalog=ProductDb;Integrated Security=True");
+        SqlConnection connection = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ProductDb;Integrated Security=True");
         public UrunForm()
         {
             InitializeComponent();
@@ -83,8 +83,8 @@ namespace Urun_Takip_Kayit
             SqlCommand command3 = new SqlCommand("update tblUrunler set urunAd=@p1,stok=@p2,alisfiyat=@p3,satisfiyat=@p4,kategori=@p5 where urunId=@p6",connection);
             command3.Parameters.AddWithValue("@p1",txtUrunAdı.Text);
             command3.Parameters.AddWithValue("@p2",numericUpDownStok.Value);
-            command3.Parameters.AddWithValue("@p3",txtAlisFiyat.Text);
-            command3.Parameters.AddWithValue("@p4",txtSatisFiyat.Text);
+            command3.Parameters.AddWithValue("@p3",decimal.Parse(txtAlisFiyat.Text));
+            command3.Parameters.AddWithValue("@p4", decimal.Parse(txtSatisFiyat.Text));
             command3.Parameters.AddWithValue("@p5",cbxKategori.SelectedValue);
             command3.Parameters.AddWithValue("@p6",txtUrunId.Text);
             command3.ExecuteNonQuery();
