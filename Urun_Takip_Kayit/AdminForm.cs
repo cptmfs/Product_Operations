@@ -17,7 +17,7 @@ namespace Urun_Takip_Kayit
         {
             InitializeComponent();
         }
-        SqlConnection connection = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ProductDb;Integrated Security=True");
+        SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-D3HGLAO\SQLEXPRESS;Initial Catalog=ProductDb;Integrated Security=True");
         private void AdminForm_Load(object sender, EventArgs e)
         {
 
@@ -46,6 +46,12 @@ namespace Urun_Takip_Kayit
         private void txtSifre_TextChanged(object sender, EventArgs e)
         {
             txtSifre.PasswordChar='*';
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.Exit();
         }
     }
 }

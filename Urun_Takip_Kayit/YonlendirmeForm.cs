@@ -52,8 +52,9 @@ namespace Urun_Takip_Kayit
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Close();
-            
+            this.Hide();
+            AdminForm adminForm = new AdminForm();
+            adminForm.Show();
         }
     }
 }

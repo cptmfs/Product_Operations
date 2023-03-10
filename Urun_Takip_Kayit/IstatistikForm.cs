@@ -17,7 +17,7 @@ namespace Urun_Takip_Kayit
         {
             InitializeComponent();
         }
-        SqlConnection connection = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ProductDb;Integrated Security=True");
+        SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-D3HGLAO\SQLEXPRESS;Initial Catalog=ProductDb;Integrated Security=True");
         private void IstatistikForm_Load(object sender, EventArgs e)
         {
             //Toplam Kategori Sayısı
