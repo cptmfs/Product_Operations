@@ -17,7 +17,7 @@ namespace Urun_Takip_Kayit
         {
             InitializeComponent();
         }
-        SqlConnection connection = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ProductDb;Integrated Security=True");
+        SqlConnection connection = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=ProductDb;Integrated Security=True");
         DataSet1TableAdapters.tblSatislarTableAdapter ds = new DataSet1TableAdapters.tblSatislarTableAdapter();
 
         private void SatislarForm_Load(object sender, EventArgs e)
