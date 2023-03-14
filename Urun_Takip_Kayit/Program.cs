@@ -16,7 +16,7 @@ namespace Urun_Takip_Kayit
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SatislarForm());
+            Application.Run(new YonlendirmeForm());
         }
     }
 }
