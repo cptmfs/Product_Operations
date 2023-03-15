@@ -33,5 +33,16 @@ namespace Urun_Takip_Kayit.Properties {
                 return ((string)(this["ProductDbConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=ProductDb;Integrated Security=" +
+            "True")]
+        public string ProductDbConnectionString1 {
+            get {
+                return ((string)(this["ProductDbConnectionString1"]));
+            }
+        }
     }
 }

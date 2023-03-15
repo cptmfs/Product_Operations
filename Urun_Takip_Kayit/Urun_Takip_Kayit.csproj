@@ -84,6 +84,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SatislarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatislarForm.Designer.cs">
+      <DependentUpon>SatislarForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UrunForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SatislarForm.resx">
+      <DependentUpon>SatislarForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UrunForm.resx">
       <DependentUpon>UrunForm.cs</DependentUpon>
     </EmbeddedResource>

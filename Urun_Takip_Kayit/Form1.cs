@@ -13,7 +13,7 @@ namespace Urun_Takip_Kayit
 {
     public partial class Form1 : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-D3HGLAO\SQLEXPRESS;Initial Catalog=ProductDb;Integrated Security=True");
+        SqlConnection connection = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ProductDb;Integrated Security=True");
         public Form1()
         {
             InitializeComponent();
